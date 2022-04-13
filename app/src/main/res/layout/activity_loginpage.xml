@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C5E5FF"
+    tools:context=".loginpage">
+
+    <TextView
+        android:id="@+id/labeltext"
+        android:layout_width="120dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="184dp"
+        android:layout_marginEnd="140dp"
+        android:background="#D3BEFA"
+        android:text="   Login Page"
+        android:textColor="#02157C"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="172dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labeltext" />
+
+    <TextView
+        android:id="@+id/Username1"
+        android:layout_width="124dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="344dp"
+        android:background="#7FC3FA"
+        android:text="  Username"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/password1"
+        android:layout_width="218dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="172dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Username" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginBottom="174dp"
+        android:background="#8FC4EF"
+        android:text="  password"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Username1" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="211dp"
+        android:layout_height="59dp"
+        android:onClick="login"
+        android:text="ENTER"
+        tools:layout_editor_absoluteX="71dp"
+        tools:layout_editor_absoluteY="677dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
